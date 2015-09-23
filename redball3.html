@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="https://storage.googleapis.com/ics-redball/redball.js"></script>
+          <script type="text/javascript">
+              function sayhellos(){
+                  alert('hi there');
+              }
+              
+              function moveright(){
+                    if(redball.left== 245) {
+                console.log('right wall hit');
+                   }
+                   else{
+                  redball.left= redball.left +15;
+                   }
+              }
+              
+              function moveleft(){
+                   if(redball.left== -10) {
+                console.log('left wall hit');
+                   }
+              else{
+                  redball.left= redball.left -15;
+                   }
+              }
+              
+              function moveup(){
+                  if(redball.top== -5){
+                    console.log('top wall hit');            
+              } 
+              else{
+                  redball.top= redball.top -15;
+                }
+              }
+              
+              function movedown(){
+                  if(redball.top== 445){
+                    console.log('bottom wall hit');            
+              }
+              else{ 
+                 redball.top= redball.top +15;
+                }
+              }
+              function movedownright(){
+                //move down right//
+                movedown();
+                moveright();
+              }
+              function movedownleft(){
+                //move down left//
+                movedown();
+                moveleft();
+              }
+              function moveupright(){
+                //move up right//
+                moveup();
+                moveright();
+              }
+              function moveupleft(){
+                //move up left//
+                moveup();
+                moveleft();
+              }
+              function triangle(){
+                //move down right//
+               movedownright();
+               movedownright();
+               movedownright();
+               movedownright();
+               movedownright();
+               movedownright();
+               movedownright();
+               movedownright();
+               movedownright();
+               //slide left//
+               moveleft();
+               moveleft();
+               moveleft();
+               moveleft();
+               moveleft();
+               moveleft();
+               moveleft();
+               moveleft();
+               moveleft();
+               moveleft();
+               moveleft();
+               moveleft();
+               moveleft();
+               moveleft();
+               moveleft();
+               moveleft();
+               moveleft();
+               moveleft();
+                 
+           //slide up right//
+               moveupright();
+               moveupright();
+               moveupright();
+               moveupright();
+               moveupright();
+               moveupright();
+               moveupright();
+               moveupright();
+               moveupright();
+               
+
+               
+               
+              }
+              function octagon(){
+                //move down right//
+                moveright();
+                moveright();
+                moveright();
+                moveright();
+                moveright();
+                moveright();
+                //move//
+                movedownright();
+                movedownright();
+                movedownright();
+                movedownright();
+                movedownright();
+                movedownright();
+                //move//
+                movedown();
+                movedown();
+                movedown();
+                movedown();
+                movedown();
+                movedown();
+                //slide//
+                 movedownleft();
+                  movedownleft();
+                   movedownleft();
+                    movedownleft();
+                     movedownleft();
+                movedownleft();
+                //slide//
+                 moveleft();
+                  moveleft();
+                   moveleft();
+                    moveleft();
+                     moveleft();
+                
+                moveleft();
+                //slide//
+                moveupleft();
+                  moveupleft();
+                    moveupleft();
+                      moveupleft();
+                        moveupleft();
+                          moveupleft();
+                             //slide//
+                moveup();
+                  moveup();
+                    moveup();
+                      moveup();
+                        moveup();
+                          moveup();
+                //slide//
+                moveupright();
+                moveupright();
+                moveupright();
+                moveupright();
+                moveupright();
+                moveupright();
+              }
+              
+              function movesquare(){
+                  //slide to right//
+                moveright();
+                moveright();
+                moveright();
+                moveright();
+                moveright();                  
+                moveright();
+                moveright();
+                 //slide down//
+                movedown();
+                movedown();
+                movedown();
+                movedown(); 
+                movedown(); 
+                movedown();
+                movedown(); 
+                 //slide left// 
+                moveleft();
+                moveleft();
+                moveleft();
+                moveleft(); 
+                moveleft(); 
+                moveleft();
+                moveleft();
+                 //slide up//
+                moveup();
+                moveup();
+                moveup();
+                moveup(); 
+                moveup(); 
+                moveup();
+                moveup();  
+                
+              }
+          </script>
+    </head>
+    <body>
+        <img id="redball" src="http://lrn.icstars.org/redball.jpg"></img>
+        <button onclick="sayhellos();">hello world</button>
+        <button onclick="moveright()">move right</button>
+        <button onclick="moveleft()">move left</button>
+        <button onclick="moveup()">move up</button>
+        <button onclick="movedown()">move down</button>
+        <button onclick="movesquare()">move square</button>
+        <button onclick="movedownright()">move down right</button>
+        <button onclick="movedownleft()">move down left</button>
+        <button onclick="moveupright()">move up right</button>
+        <button onclick="moveupleft()">move up left</button>
+        <button onclick="triangle()">triangle</button>
+        <button onclick="octagon()">octagon</button>
+        
+    </body>
+</html>
+
+
